@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .neon-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  background: #0f0f0f;
+  overflow: hidden;
+}
+
+.neon-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px; /* tebal border */
+  border-radius: inherit;
+  background-color: #38d1f0;
+  /* background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff00ff); */
+  background-size: 800% 800%;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: neonMove 4s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(6px);
+}
+
+@keyframes neonMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.typing-loop {
+  display: inline-block;
+  position: relative;
+  width: 22ch; /* bisa diubah sesuai teks terpanjang */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-loop span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation-name: typingLoop;
+  animation-duration: 12s; /* sama dengan total loop di React */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes typingLoop {
+  0%, 20% { width: 0; }
+  20%, 50% { width: 100%; }
+  50%, 100% { width: 0; }
+}
+
+/* Base */
+.cursor-outer,
+.cursor-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease-out;
+  z-index: 9999;
+}
+
+/* Outer circle */
+.cursor-outer {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  background: transparent;
+  mix-blend-mode: difference; /* agar terlihat di latar */
+}
+
+/* Inner circle */
+.cursor-inner {
+  width: 10px;
+  height: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-out;
+}
+
+/* Hover effect */
+.cursor-hover.cursor-outer {
+  transform: translate(-50%, -50%) scale(1.8);
+  border-color: white;
+}
+
+.cursor-hover.cursor-inner {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: white;
+}
+
+.section__content-cta {
+  margin-top: 60px;
+}
+
+.footer-two .footer__copyright {
+padding: 40px 0px;
+border-top: 1px solid #454545;
+margin-top: 65px;
+}
+.text-stroke {
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 2px #38d1f0;
+font-family: sans-serif;
+display: inline-block;
+position: relative;
+}
+/* #1D4ED8, atau #3B82F6 */
+ 
+
+/* di globals.css */
+* {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.backdrop-invert {
+  -webkit-backdrop-filter: invert(1);
+  backdrop-filter: invert(1);
+}
+
+.eapps-instagram-feed-header {
+  padding: 56px !important;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.eapps-instagram-feed-header{
+  padding: 38px !important;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out forwards;
+}
