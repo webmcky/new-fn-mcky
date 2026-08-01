@@ -62,6 +62,16 @@
   50%, 100% { width: 0; }
 }
 
+/* Sembunyikan custom cursor di HP & tablet (layar < 1024px) */
+.custom-cursor {
+  display: block;
+}
+@media (max-width: 1023px) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
 /* Base */
 .cursor-outer,
 .cursor-inner {

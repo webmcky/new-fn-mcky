@@ -119,10 +119,19 @@ const Cursor = () => {
   const [outerPosition, setOuterPosition] = useState({ x: 0, y: 0 });
   const [isClicking, setIsClicking] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
   const animationRef = useRef();
 
+  // Hanya aktifkan custom cursor di layar desktop (>= 1024px).
+  // Pada HP & tablet (layar < 1024px) cursor di-hide, tidak ada animasi.
   useEffect(() => {
+    const isDesktop = window.innerWidth >= 1024;
+    setEnabled(isDesktop);
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
     const updateMousePosition = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -176,10 +185,12 @@ const Cursor = () => {
 
       if (animationRef.current) cancelAnimationFrame(animationRef.current);
     };
-  }, [mousePosition.x, mousePosition.y]);
+  }, [enabled, mousePosition.x, mousePosition.y]);
+
+  if (!enabled) return null;
 
   return (
-    <div className="bg-gray-900 relative overflow-hidden ">
+    <div className="custom-cursor bg-gray-900 relative overflow-hidden ">
       {/* Main dot */}
       <div
         className={`fixed pointer-events-none z-[9999] w-6 h-6 rounded-full border-2 transition-transform duration-100 ease-out ${
