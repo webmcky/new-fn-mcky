@@ -173,3 +173,60 @@ position: relative;
 .animate-slideIn {
   animation: slideIn 0.5s ease-out forwards;
 }
+
+/* ==========================================================================
+   Services Modern Mobile & Tablet Responsive Overrides ONLY
+   Desktop (>= 992px) is completely preserved as original theme UI.
+   ========================================================================== */
+
+/* Mobile (< 640px): 1 card per row with gap below each card */
+@media (max-width: 639px) {
+  .services-modern .serv-boxs {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .services-modern .item {
+    width: 100% !important;
+    height: 340px !important;
+    margin: 0 !important;
+  }
+
+  .services-modern .item p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Tablet (640px - 991px): 2 cards per row with gap below each card */
+@media (min-width: 640px) and (max-width: 991px) {
+  .services-modern .serv-boxs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .services-modern .item {
+    width: 100% !important;
+    height: 360px !important;
+    margin: 0 !important;
+  }
+
+  .services-modern .item p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+}
+
+

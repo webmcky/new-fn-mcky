@@ -63,7 +63,7 @@ export default function Clients() {
       </div>
 
       {/* Grid logo */}
-      <div className="relative z-10 flex items-center flex-wrap mx-20 gap-10 justify-center">
+      <div className="relative z-10 grid grid-cols-4 lg:grid-cols-6 gap-10 px-4 sm:px-10 mx-auto max-w-6xl place-items-center">
         {logos.map((logo, index) => (
           <div
             key={index}
