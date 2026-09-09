@@ -2,7 +2,8 @@
 const path = require('path');
 
 const nextConfig = {
- images: {
+  output: 'standalone',
+  images: {
     domains: ['images.unsplash.com'], // add all external image hosts you use here
   },
   reactStrictMode: false,
