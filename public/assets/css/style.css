@@ -40,7 +40,7 @@ body.crev-agency h6 {
   font-weight: 500;
 }
 
-body.home-personal .container {
+.home-personal .container {
   max-width: 1280px;
 }
 
@@ -3311,6 +3311,16 @@ body.loaded {
   100% {
     opacity: 0;
   }
+}
+
+/* Elfsight Instagram widget - make posts square (height = width) */
+.eapps-instagram-feed-posts-item-image {
+  aspect-ratio: 4/4;
+  object-fit: cover;
+}
+
+.eapps-instagram-feed-posts-item-image-wrapper {
+  padding-top: 100% !important;
 }
 
 /* ====================== [ Start Overlay ] ====================== */

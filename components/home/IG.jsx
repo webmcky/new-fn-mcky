@@ -22,16 +22,14 @@ export default function Home() {
   if (!mounted) return null;  
 
   return (
-    <main className="p-6 min-h-screen text-white">
+    <main className="p-6 text-white">
       <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div
-        className="elfsight-app-37619fd6-4054-4d5d-8f00-2c3bfb670a84"
-        data-elfsight-app-lazy
-      ></div>
-
-
-
-      
+      <div className="mx-auto w-full max-w-3xl">
+        <div
+          className="elfsight-app-37619fd6-4054-4d5d-8f00-2c3bfb670a84"
+          data-elfsight-app-lazy
+        ></div>
+      </div>
     </main>
 
     

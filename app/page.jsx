@@ -23,7 +23,6 @@ export const metadata = {
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',
-      '/assets/scss/footer.scss',
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
       'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap',
@@ -33,7 +32,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <body className="home-personal">
+    <div className="home-personal">
       <LoadingScreen />
       <CookieConsent/>
       <Cursor />
@@ -90,12 +89,12 @@ export default function Home() {
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
+        src="/assets/js/imagesloaded.pkgd.min.js"
       ></Script>
 
       {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
 
       <Script src="/assets/js/scripts.js"></Script>
-    </body>
+    </div>
   );
 }
