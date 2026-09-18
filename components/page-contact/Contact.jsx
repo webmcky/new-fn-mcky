@@ -49,11 +49,11 @@ function Contact() {
               </div>
               <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Address</h6>
-                <p>Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>
+                <p>Jl. Wibawa Mukti II Jl. Dukuh II No.65, RT.005/RW.006, Jatiasih, Kec. Jatiasih, Kota Bks, Jawa Barat 17423</p>
               </div>
               <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Email</h6>
-                <p>scky@gmail.com</p>
+                <p>info@mckypro.com</p>
               </div>
               <div className="social-icon mt-50">
                 <a href="#"><i className="fab fa-facebook-f"></i></a>

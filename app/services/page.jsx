@@ -12,7 +12,7 @@ import Intro2 from '@/components/home-digital-agency/Intro2';
 import Testimonials from '@/components/home-digital-agency/Testimonials';
 import Blog from '@/components/home-digital-agency/Blog';
 import Header from '@/components/page-services/Header';
-import Services from '@/components/home/Services';
+import Specialized from '@/components/page-about/Specialized';
 import Numbers from '@/components/page-services/Numbers';
 import Team from '@/components/page-about/Team';
 export const metadata = {
@@ -41,7 +41,7 @@ export default function Home() {
         <div id="smooth-content">
           <main className="main-bg o-hidden">
             <Header />
-            <Services />
+            <Specialized />
             <Intro2 />
             <Team />
             <Numbers />

@@ -95,15 +95,6 @@ function Services() {
 
         <div className="relative z-10 text-center space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
           
-          {/* Top Text with Gradient - RESPONSIVE */}
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black
-            bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent
-            tracking-tight
-            transform transition-all duration-500 group-hover:scale-105
-            drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] sm:drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-            MCKY!
-          </h1>
-
           {/* Bottom Text - RESPONSIVE */}
           <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-200
             tracking-wide leading-relaxed sm:leading-relaxed md:leading-relaxed

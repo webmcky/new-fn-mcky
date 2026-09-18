@@ -18,13 +18,6 @@ function Specialized() {
       img: '/assets/imgs/serv-img/2.png',
       link: '/page-services-details',
     },
-    {
-      num: '03',
-      title: 'PHOTOBOOTH',
-      subtitle: 'MULTIMEDIA',
-      img: '/assets/imgs/serv-img/3.png',
-      link: '/page-services-details',
-    },
   ];
 
   return (

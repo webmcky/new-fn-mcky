@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Home, User, Briefcase, Mail } from 'lucide-react';
 import { useRouter } from "next/navigation";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +42,13 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <span className="text-white font-bold text-xl hidden sm:block">
-              MCKY!
-              </span>
+              <Image
+                src="/assets/imgs/MCKYBIRU.png"
+                alt="MCKY Logo"
+                width={60}
+                height={24}
+                className="hidden sm:block"
+              />
             </div>
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-2">

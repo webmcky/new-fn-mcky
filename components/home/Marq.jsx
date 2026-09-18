@@ -4,20 +4,13 @@ import React from 'react';
 function Marq() {
   const items = [
     'Broadcast Production',
-    'Live Production',
-    'Graphic Content',
-    'System Integration',
-    'E-sport Production',
+    'Multimedia',
     'Broadcast Production',
-    'Live Production',
-    'Graphic Content',
-    'System Integration',
-    'E-sport Production',
-     'Broadcast Production',
-    'Live Production',
-    'Graphic Content',
-    'System Integration',
-    'E-sport Production',
+    'Multimedia',
+    'Broadcast Production',
+    'Multimedia',
+    'Broadcast Production',
+    'Multimedia',
   ];
   return (
     <section className="marq">
@@ -26,16 +19,15 @@ function Marq() {
           <div className="box">
             {items.map((item, i) => (
               <div key={i} className="item">
-                <h4 className="d-flex align-items-center text-[#38d1f0]">
+                <h4 className="d-flex align-items-center text-[#38d1f0]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   <span>{item}</span>
                   <span className="icon-img-50 ml-40">
                     <Image
-  src="/assets/imgs/star.png"
-  alt="star"
-  width={24}
-  height={24}
-/>
-
+                      src="/assets/imgs/star.png"
+                      alt="star"
+                      width={24}
+                      height={24}
+                    />
                   </span>
                 </h4>
               </div>
@@ -44,16 +36,15 @@ function Marq() {
           <div className="box">
             {items.map((item, i) => (
               <div key={i} className="item">
-                <h4 className="d-flex align-items-center">
+                <h4 className="d-flex align-items-center" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   <span>{item}</span>
                   <span className="icon-img-50 ml-40">
-                   <Image
-  src="/assets/imgs/star.png"
-  alt="star"
-  width={24}
-  height={24}
-/>
-
+                    <Image
+                      src="/assets/imgs/star.png"
+                      alt="star"
+                      width={24}
+                      height={24}
+                    />
                   </span>
                 </h4>
               </div>

@@ -3248,6 +3248,13 @@ body.loaded {
   z-index: 20;
 }
 
+.load-text img {
+  width: 180px;
+  height: auto;
+  -webkit-animation: loading 1s infinite alternate;
+  animation: loading 1s infinite alternate;
+}
+
 .load-text span {
   -webkit-animation: loading 1s infinite alternate;
   animation: loading 1s infinite alternate;

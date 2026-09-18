@@ -44,11 +44,8 @@ function LoadingScreen() {
       </svg>
 
       <div className="loader-wrap-heading">
-        <div className="load-text font-extrabold">
-          <span>M</span>
-          <span>C</span>
-          <span>K</span>
-          <span>Y</span>
+        <div className="load-text">
+          <img src="/assets/imgs/MCKYBIRU.png" alt="MCKY" />
         </div>
       </div>
     </div>

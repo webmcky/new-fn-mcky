@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import gsap from "gsap";
 import chroma from "chroma-js";
 
@@ -160,7 +161,14 @@ function Footer() {
         {/* Header Section */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h1 className="text-5xl md:text-7xl font-black mb-4 bg-clip-text text-[#38d1f0] animate-pulse">
-            MCKY
+            <Image
+              src="/assets/imgs/MCKYBIRU.png"
+              alt="MCKY Logo"
+              width={70}
+              height={39}
+              style={{ height: 'auto' }}
+              className="inline-block w-[50%] sm:w-[30%] lg:w-[20%]"
+            />
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
             Broadcasting Excellence • Multimedia Innovation
@@ -181,11 +189,11 @@ function Footer() {
             <div className="section__content-cta">
                 <h2>
                   <Link
-                    href="mailto:info@gmail.com"
+                    href="mailto:info@mckypro.com"
                     className="folks-text animated-text"
                     ref={animatedTextRef}
                   >
-                    mcky@gmail.com
+                    info@mckypro.com
                     {animatedTextContent.split("").map((char, index) => (
                       <span
                         aria-hidden="true"

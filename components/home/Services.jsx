@@ -49,7 +49,7 @@ function Blog() {
       </div>
       <div className="container-fluid rest">
         <div className="serv-boxs">
-          {data.map((item, i) => (
+          {data.filter(item => ['Broadcast', 'Multimedia'].includes(item.title)).map((item, i) => (
             <div
               key={i}
               onMouseEnter={handleActiveSer}

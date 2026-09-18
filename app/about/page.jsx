@@ -11,7 +11,7 @@ import Script from 'next/script';
  import Header from '@/components/page-about/Header';
 import Intro from '@/components/page-about/Intro';
 import Numbers from '@/components/page-about/Numbers';
-import Specialized from '@/components/page-about/Specialized';
+
 
 export const metadata = {
   title: 'MCKY | about us',
@@ -41,7 +41,7 @@ export default function Home() {
             <Header />
             <Intro />
             <Numbers />
-            <Specialized />
+
             <Team />
             <Marq2 />
           </main>
