@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 function Marq() {
@@ -21,14 +20,6 @@ function Marq() {
               <div key={i} className="item">
                 <h4 className="d-flex align-items-center text-[#38d1f0]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   <span>{item}</span>
-                  <span className="icon-img-50 ml-40">
-                    <Image
-                      src="/assets/imgs/star.png"
-                      alt="star"
-                      width={24}
-                      height={24}
-                    />
-                  </span>
                 </h4>
               </div>
             ))}
@@ -38,14 +29,6 @@ function Marq() {
               <div key={i} className="item">
                 <h4 className="d-flex align-items-center" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   <span>{item}</span>
-                  <span className="icon-img-50 ml-40">
-                    <Image
-                      src="/assets/imgs/star.png"
-                      alt="star"
-                      width={24}
-                      height={24}
-                    />
-                  </span>
                 </h4>
               </div>
             ))}
